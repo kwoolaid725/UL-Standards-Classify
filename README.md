@@ -7,7 +7,11 @@
  
   
 <b> 2. Data Cleaning before Analysis <b> <br>
-- Preprocess.ipynb <br>
+- Preprocess.ipynb <br> 
+  - Removed duplicates separated by / in each description
+  - Removed Spanish from description that contains Spanish 
+  - Extracted type of standard from the description ('Standard', 'Test', 'Method', 'Outline', 'Procedure' and etc.) ans stored under column name "Category"
+  - Applied YAKE algorithm as an unsupervised keyword extraction method for extracting keywords from each description (description saved under column name "Topic", which is the remainder after taking out the "Category" strings from the description. 
 - End Result: Preprocessed.csv
 
 
